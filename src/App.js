@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
-
+import L from 'leaflet';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+
+const myIcon = L.icon({
+  iconUrl: userLocationURL,
+  iconSize: [50, 82]
+});
 
 import './App.css';
 
 class App extends Component {
   state = {
-    location: {
       lat: 51.505,
       lng: -0.09,
-    },
-    haveUsersLocation: false,
-    zoom: 2,
-    userMessage: {
-      name: '',
-      message: ''
-    },
-    showMessageForm: false,
-    sendingMessage: false,
-    sentMessage: false,
-    messages: []
   }
-  
+
   render() {
+    const position = [this.state.location.lat, this.state.location.lng];
     return (
       <Map
       className="map"
