@@ -1,3 +1,6 @@
+# React guest map app
+* React app that lets user make a comment, and pins that comment with their message
+
 ## TODO
 
 * [X] create-react-app
