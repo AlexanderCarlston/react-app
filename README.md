@@ -13,7 +13,6 @@
 * [] Show a form to submit a message
   * when form is submitted - POST /message
 * [] Setup server with create-epress-api: https://www.npmjs.com/package/create-epress-api
-* [] Add monk and joi
 * [] POST /messages
   * latitude
   * longitude

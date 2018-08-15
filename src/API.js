@@ -1,5 +1,4 @@
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/api/v1/messages' : 'https://api.guestm.app/api/v1/messages';
-
+const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:5000/api/v1/messages' : ''
 export function getMessages() {
   return fetch(API_URL)
     .then(res => res.json())
